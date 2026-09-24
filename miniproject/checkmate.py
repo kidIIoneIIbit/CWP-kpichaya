@@ -1,10 +1,3 @@
-"""checkmate.py - Rush00 ex00
-
-ตรวจว่า King ('K') บนกระดานสี่เหลี่ยมจัตุรัสถูก check หรือไม่
-หมาก: K (King), P (Pawn), B (Bishop), R (Rook), Q (Queen)
-ตัวอักษรอื่นทั้งหมดถือเป็นช่องว่าง
-"""
-
 KING = 'K'
 PAWN = 'P'
 BISHOP = 'B'
@@ -17,7 +10,6 @@ STRAIGHTS = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
 
 def parse_board(board):
-    """คืน list ของแถว หรือ None ถ้า input ไม่ถูกต้อง (undefined behavior)"""
     if not isinstance(board, str):
         return None
     if board.endswith('\n'):
